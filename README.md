@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/KlemenDEV/SuperSimpleNet/blob/master/LICENSE)
 
-SimpleNet is a simple nerual network implementation for educational use and simple classification use cases
+SuperSimpleNet is a simple nerual network implementation for educational use and simple classification use cases
 written in Java. It tries to use parallelization as much as possible to use all available CPU cores for
 faster processing.
 
