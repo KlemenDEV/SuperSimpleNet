@@ -7,7 +7,7 @@ written in Java. It tries to use parallelization as much as possible to use all 
 faster processing.
 
 This repository includes use examples in form of Unit tests. There are two examples:
-* XOR implementation using SimpleNet
+* XOR implementation using neural network
 * Classification of samples from ISOLET dataset
 
 ## Learning curve for ISOLET dataset
