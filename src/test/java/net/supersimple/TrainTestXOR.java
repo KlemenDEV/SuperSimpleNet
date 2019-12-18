@@ -28,7 +28,7 @@ import java.util.*;
 public class TrainTestXOR {
 
 	@Test public void train() {
-		L3Classifier classifier = new L3Classifier(2, 2, 20);
+		L3Classifier classifier = new L3Classifier(2, 2, 3);
 
 		Learning learning = new Learning(classifier);
 
@@ -58,7 +58,7 @@ public class TrainTestXOR {
 						sw.repaintChart();
 					}
 
-					return meanerror > 1e-3;
+					return meanerror > 0.01;
 				});
 
 		System.out.println("Classified (0, 0) as: " + classifier.classify(0, 0));
