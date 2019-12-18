@@ -28,7 +28,7 @@ import java.util.*;
 public class TrainTestXOR {
 
 	@Test public void train() {
-		L3Classifier classifier = new L3Classifier(2, 2, 3);
+		L3Classifier classifier = new L3Classifier(2, 2, 2);
 
 		Learning learning = new Learning(classifier);
 
@@ -49,7 +49,7 @@ public class TrainTestXOR {
 				new Sample(new double[] { 1, 0 }, 1),
 				new Sample(new double[] { 1, 1 }, 0)),
 				// @formatter:on
-				0.2, 4, (step, meanerror) -> {
+				0.3, 4, (step, meanerror) -> {
 					if (step % 1000 == 0) {
 						indexes.add(step);
 						error.add(meanerror);
