@@ -2,12 +2,12 @@
 
 [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/KlemenDEV/SuperSimpleNet/blob/master/LICENSE)
 
-SimpleNet is a simple nerual network implementation for educational use and simple classification use cases
+SuperSimpleNet is a simple nerual network implementation for educational use and simple classification use cases
 written in Java. It tries to use parallelization as much as possible to use all available CPU cores for
 faster processing.
 
 This repository includes use examples in form of Unit tests. There are two examples:
-* XOR implementation using SimpleNet
+* XOR implementation using neural network
 * Classification of samples from ISOLET dataset
 
 ## Learning curve for ISOLET dataset
