@@ -16,10 +16,12 @@
 
 package net.supersimple.learning;
 
+import net.supersimple.layer.InputLayer;
 import net.supersimple.layer.Neuron;
 import net.supersimple.AbstractNetwork;
 import net.supersimple.data.Sample;
 import net.supersimple.layer.Layer;
+import net.supersimple.layer.OutputLayer;
 
 import java.util.Collections;
 import java.util.List;
@@ -69,6 +71,12 @@ public class Learning {
 		System.out.println("Training network with " + layers.size() + " layers");
 		System.out.println("Network has " + output.getOutputCount() + " outputs, " + network.getInput().getNeuronCount()
 				+ " input neruons, and " + (layers.size() - 2) + " hidden layers");
+
+		int lidx = 1;
+		for (Layer layer : layers) {
+			if (!(layer instanceof InputLayer) && !(layer instanceof OutputLayer))
+				System.out.println("Hidden layer " + (lidx++) + " has " + layer.getNeuronCount() + " neurons");
+		}
 
 		System.out.println("Initiating weights with random values...");
 		for (Layer layer : layers) {
