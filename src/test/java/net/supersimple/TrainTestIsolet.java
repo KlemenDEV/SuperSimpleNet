@@ -41,7 +41,7 @@ public class TrainTestIsolet {
 		List<Sample> testSamples = CSVLoader
 				.loadSamples(Paths.get(ClassLoader.getSystemResource("isolet/isolet5.data").toURI()));
 
-		L3Classifier classifier = new L3Classifier(617, 26, 250);
+		L3Classifier classifier = new L3Classifier(617, 26, 150);
 		Learning learning = new Learning(classifier);
 
 		List<Integer> indexes = new ArrayList<>(Collections.singleton(0));
@@ -54,7 +54,7 @@ public class TrainTestIsolet {
 		indexes.clear();
 		error.clear();
 
-		learning.learn(trainSamples, testSamples, 0.07, 100, (step, mse) -> {
+		learning.learn(trainSamples, testSamples, 0.1, 100, (step, mse) -> {
 			indexes.add(step);
 			error.add(mse);
 
